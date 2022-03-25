@@ -7,7 +7,7 @@ public class ItemDropping : MonoBehaviour
 {
     private GameObject[] spawnPoints;
     private GameObject[] items;
-    private float spawnTime = 0.5f;
+    private float spawnTime = 0.3f;
 
     // Start is called before the first frame update
     void Start()

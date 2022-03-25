@@ -31,4 +31,9 @@ public class AddOrRemoveCollider : MonoBehaviour
             }
         }
     }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(this);
+    }
 }
