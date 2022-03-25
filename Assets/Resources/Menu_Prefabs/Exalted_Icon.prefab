@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8837654293107021049}
   - component: {fileID: -4001627579411632668}
   - component: {fileID: -4393796996337690507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Exalted_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6063580487138708944}
   - component: {fileID: -8431389160130030904}
   - component: {fileID: 98490235718151252}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brute_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

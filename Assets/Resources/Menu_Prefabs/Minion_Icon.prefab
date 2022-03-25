@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4305175289213363049}
   - component: {fileID: -5855806396865487455}
   - component: {fileID: -7825915381827506654}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Minion_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

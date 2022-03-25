@@ -1,12 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class AddOrRemoveCollider : MonoBehaviour
 {
     [SerializeField] Rigidbody2D mainRb;
     [SerializeField] Collider2D collider1;
     [SerializeField] Collider2D collider2;
+    private GameObject[] items;
+
+    private void Start()
+    {
+        items = Resources.LoadAll<GameObject>("Menu_Prefabs").Cast<GameObject>().ToArray();
+        foreach(GameObject item in items)
+        {
+            Physics2D.IgnoreLayerCollision(7, 8);
+        }
+    }
 
     // Update is called once per frame
     void Update()
