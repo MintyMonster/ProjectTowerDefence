@@ -13,10 +13,7 @@ public class AddOrRemoveCollider : MonoBehaviour
     private void Start()
     {
         items = Resources.LoadAll<GameObject>("Menu_Prefabs").Cast<GameObject>().ToArray();
-        foreach(GameObject item in items)
-        {
-            Physics2D.IgnoreLayerCollision(7, 8);
-        }
+        Physics2D.IgnoreLayerCollision(7, 8);
     }
 
     // Update is called once per frame
@@ -29,7 +26,8 @@ public class AddOrRemoveCollider : MonoBehaviour
 
             if((collider1 == Physics2D.OverlapPoint(touchPos)) || (collider2 == Physics2D.OverlapPoint(touchPos)))
             {
-                Debug.Log("Hit");
+                Physics2D.IgnoreLayerCollision(7, 8, false);
+                mainRb.GetComponent<Rigidbody2D>().WakeUp();
             }
         }
     }
